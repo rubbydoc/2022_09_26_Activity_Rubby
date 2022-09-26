@@ -39,29 +39,30 @@ public class ArrayList_Implementation{
             list.add(num);
             Thread.sleep(1000);
 
-            System.out.println("You added a number to the list.");
+            System.out.println("You added " + num + " to the list.");
 
             Thread.sleep(1000);
             
         } else if(response.equals("b")){
+            System.out.println("Input the number you want to remove: ");
+            int num = input.nextInt();
+            list.remove(Integer.valueOf(num));
+            Thread.sleep(1000);
+            System.out.println("You removed " + num + " from the list");
 
             Thread.sleep(1000);
-            menu();
 
         } else if(response.equals("c")){
 
             Thread.sleep(1000);
-            menu();
 
         } else if(response.equals("d")){
 
             Thread.sleep(1000);
-            menu();
 
         } else if(response.equals("e")){
 
             Thread.sleep(1000);
-            menu();
 
         }
        }
