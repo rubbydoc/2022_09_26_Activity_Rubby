@@ -4,9 +4,14 @@ public class ArrayList_Implementation{
     static Scanner input = new Scanner(System.in);
 
 
+
     public static void main (String[] args) throws InterruptedException{
-        // ArrayList<Integer> arrList = new ArrayList<Integer>(1); //declaring an arraylist
-        selection();
+        ArrayList<Integer> arrList = new ArrayList<Integer>(1); //declaring an arraylist
+        selection(arrList);
+       
+      
+
+
 
 
 
@@ -22,17 +27,58 @@ public class ArrayList_Implementation{
                 D. CLEAR NUMBERS
                 E. EXIT
                 """);
+                
+
+                
             }
 
-    public static void selection() throws InterruptedException{
+    public static void selection(ArrayList<Integer> list) throws InterruptedException{
+       while(true){
         menu();
         String response = input.nextLine();
-        System.out.println(response);
+
+
+       
         if(response.equals("a")){
-            System.out.println("Ahaha");
+            System.out.println("Add a number to the list: ");
+            int num = input.nextInt();
+            list.add(num);
+            Thread.sleep(1000);
+
+            System.out.println("You added a number to the list.");
+
+            Thread.sleep(1000);
+            continue;
+            
+        } else if(response.equals("b")){
+
             Thread.sleep(1000);
             menu();
+
+        } else if(response.equals("c")){
+
+            Thread.sleep(1000);
+            menu();
+
+        } else if(response.equals("d")){
+
+            Thread.sleep(1000);
+            menu();
+
+        } else if(response.equals("e")){
+
+            Thread.sleep(1000);
+            menu();
+
+        } else{
+            System.out.println("Invalid input. Choose a valid letter. ");
+            menu();
+
         }
+       }
     }
+
+
+  
     
 }
