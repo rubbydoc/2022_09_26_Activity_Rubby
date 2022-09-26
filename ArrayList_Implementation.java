@@ -11,10 +11,6 @@ public class ArrayList_Implementation{
        
       
 
-
-
-
-
     }
     
 
@@ -27,8 +23,6 @@ public class ArrayList_Implementation{
                 D. CLEAR NUMBERS
                 E. EXIT
                 """);
-                
-
                 
             }
 
@@ -48,7 +42,6 @@ public class ArrayList_Implementation{
             System.out.println("You added a number to the list.");
 
             Thread.sleep(1000);
-            continue;
             
         } else if(response.equals("b")){
 
@@ -68,10 +61,6 @@ public class ArrayList_Implementation{
         } else if(response.equals("e")){
 
             Thread.sleep(1000);
-            menu();
-
-        } else{
-            System.out.println("Invalid input. Choose a valid letter. ");
             menu();
 
         }
