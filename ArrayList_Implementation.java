@@ -1,4 +1,4 @@
-public class ArrayList_Implentation{
+public class ArrayList_Implementation{
     public static void main (String[] args){
 
     }
