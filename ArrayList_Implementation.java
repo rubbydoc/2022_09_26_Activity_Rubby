@@ -23,7 +23,7 @@ public class ArrayList_Implementation {
         while (true) {
             menu();
             String response = input.nextLine();
-            if (response.equals("a")) {
+            if (response.equals("A")) {
                 System.out.println("Add a number to the list: ");
                 int num = input.nextInt();
                 if (num < 0) {
@@ -36,7 +36,7 @@ public class ArrayList_Implementation {
                     System.out.println("You added " + num + " to the list.");
                     Thread.sleep(1000);
                 }
-            } else if (response.equals("b")) {
+            } else if (response.equals("B")) {
                 System.out.println("Input the number you want to remove: ");
                 int num = input.nextInt();
                 if (list.indexOf(num) == -1) {
@@ -48,15 +48,15 @@ public class ArrayList_Implementation {
                     System.out.println("You removed " + num + " from the list");
                     Thread.sleep(1000);
                 }
-            } else if (response.equals("c")) {
+            } else if (response.equals("C")) {
                 System.out.println("Display the list: " + list);
                 Thread.sleep(1000);
                 System.out.println("\n");
-            } else if (response.equals("d")) {
+            } else if (response.equals("D")) {
                 list.clear();
                 System.out.println("You cleared the list");
                 Thread.sleep(1000);
-            } else if (response.equals("e")) {
+            } else if (response.equals("E")) {
                 System.out.println("Exiting...");
                 Thread.sleep(1000);
                 System.exit(0);
