@@ -41,10 +41,14 @@ public class HashSet_Implementation {
                 case "E": case "e":
                     System.exit(0);
                     break;
+                
+                
+                
             }
         }
     }
 
+  
     public static void add(int num) throws InterruptedException{
         set.add(num);
         Thread.sleep(1000);
