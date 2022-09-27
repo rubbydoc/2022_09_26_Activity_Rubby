@@ -50,9 +50,16 @@ public class HashSet_Implementation {
 
   
     public static void add(int num) throws InterruptedException{
-        set.add(num);
-        Thread.sleep(1000);
-        System.out.println("You added " + num + " to the set.");
+        if(set.contains(num)){
+            System.out.println("Number already in the set");
+            Thread.sleep(1000);
+        } else{
+            set.add(num);
+            Thread.sleep(1000);
+            System.out.println("You added " + num + " to the set.");
+        }
+        
+        
     }
 
     public static void remove(int num) throws InterruptedException {
