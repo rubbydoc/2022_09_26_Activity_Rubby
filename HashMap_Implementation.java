@@ -53,10 +53,33 @@ public class HashMap_Implementation {
 
   
     public static void add(int num) throws InterruptedException{
-        key++;
-            map.put(key,num);
-            Thread.sleep(1000);
-            System.out.println("You added " + num + " to the map.");
+        boolean flag = false;
+        for (int i = 2; i <= num / 2; ++i) {
+          if (num % i == 0) {
+            flag = true;
+            break;
+          }
+        }
+        if(num==1){
+            key++;
+                map.put(key,num);
+                Thread.sleep(1000);
+                System.out.println("You added " + num + " to the map.");
+    
+
+        }else{
+            if(!flag){
+                System.out.println("You cannot add a prime number.");
+            } else{
+                key++;
+                map.put(key,num);
+                Thread.sleep(1000);
+                System.out.println("You added " + num + " to the map.");
+    
+            }
+        }
+
+        
         
         
         
